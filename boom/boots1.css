@@ -1,0 +1,255 @@
+
+#top{
+	background-color: white;
+	padding: 10px 0;
+	color: black;
+	width: 100%;
+	position: fixed;
+	z-index: 12;
+
+	
+}
+body{
+	width:100%;
+}
+.active a{
+	color: #56bc94 !important;
+	
+}
+#menu:hover{
+color: #56bc94;
+background: none;
+
+}
+
+.promo{
+  background-image:url(gka1.png); 
+  background-size: contain;
+  background-color: #56bc94;
+  padding-top: 30px;
+  padding-bottom: 60px;
+ }
+#promo1{
+
+	color: white;
+	padding-top: 80px;
+
+	}
+#row1{
+	margin-top: 30px;
+}
+#row2{
+	margin-top: 47px;
+}
+#promoul{
+	font-size: 25px;
+	line-height: 2;
+	list-style-type: circle;
+}
+#primg{
+	width: 70%;
+	margin: 0 48px;
+	display: block;
+}
+#feature{
+	padding: 80px 0;
+}
+#menu{
+	color: black;
+}
+.iconround{
+	width: 90px;
+	height: 90px;
+	border: 3px solid #56bc94;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: table;
+}
+.iconround:hover{
+	background: #56bc94;
+}
+.iconround:hover #faid{
+	
+	color: white;
+
+}
+#faid{
+	font-size: 48px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	color: #56bc94;
+}
+.info{
+	text-align: center;
+	padding:27px;
+}
+.tit{
+	color: #56bc94;
+}
+.icon .fa {
+    color: #56bc94;
+    font-size: 48px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+#storyrow{
+	padding: 20px;
+}
+#story{
+	background-image: url(gka1.png);
+	background-size: contain;
+	background-color: #56bc94;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	text-align: center;
+}
+#storyid{
+	text-align: center;
+}
+.storytit{
+	color: white;
+	text-align: center;
+
+}
+
+#storyinf{
+	color: white;
+	font-size: 24px;
+	text-align: center;
+}
+#FAQ{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+#pad{
+
+}
+.news{
+	background: #f1f1f1;
+	padding: 30px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	border-bottom: 3px solid #56bc94;
+}
+.faqend{
+	margin-top: 30px;
+	text-align: center;
+}
+#faqbut{
+	background: #56bc94;
+	padding: 20px;
+	color: white;
+	border-radius: 5px;
+	vertical-align: middle;
+	margin-top: 20px;
+	display: inline-block;
+	text-decoration:none;
+}
+#TESTIMONIAL{
+	padding-top: 80px;
+	padding-bottom: 80px;
+
+}
+#testid{
+}
+.quotebox{
+	background:#f1f1f1;
+	border-style: none;
+	border-radius: 5px;
+	border-top: 3px solid #56bc94;
+	padding: 30px;
+	height: 173px;
+	font-size: 14px;
+	margin-bottom: 23px;
+}
+.quotebox:after{
+left: 55px;
+content:"";
+display: block;
+height: 0;
+width: 0;
+border-left: 10px solid transparent;
+border-right: 10px solid transparent;
+border-top: 10px solid #f5f5f5;
+position: absolute;
+bottom: -10px;
+top:173px;
+
+}
+blockquote{
+	padding-left: 20px;
+	padding-top:0;
+	margin: 0;
+	border-style: none;
+	font-size: 14px;
+}
+.person img{
+	padding-left: 20px;
+	float: left;
+}
+.person p{
+	text-align: center;
+}
+#CONTACT{
+	background: #56bc94;
+	padding: 80px 0;
+}
+.contactinf p{
+	text-align: center;
+}
+.contactinf {
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.contactinf a:hover{
+	text-decoration: none;
+}
+#conbut{
+	border-radius: 5px;
+	padding:10px;
+	border-style: none;
+}
+footer{
+	background: #444444;
+	color: #b3b3b3;
+}
+
+@media (min-width: 300px) and (max-width:1024px) 
+{
+	#row1 h2{
+		font-size: 30px;
+		text-align: center;
+
+	}
+	#corbut{
+	background-color: #56bc94;	
+
+	position: relative;
+
+	margin: 18px 0;
+	
+    }
+    .navbar-left{
+	float: left;
+    }
+    
+    #corbut span{
+	
+	background-color: white;
+    }
+	
+	#demo,#row2,#storyrow{
+		text-align: center;
+	}
+	blockquote{
+		font-size: 11px;
+	}
+}
+
+.navbar-nav{
+	margin:0;
+}
