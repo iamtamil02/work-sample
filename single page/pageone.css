@@ -1,0 +1,44 @@
+body{
+	background: black;
+	background-size: cover;
+}
+ul{
+	list-style: none;
+	
+}
+li{
+	padding: 9px 26px 6px 26px;
+	display: inline-block;
+	color: white;
+	height: 17px;
+
+}
+h1,h2,h3{
+	color: #FA057E;
+	font: normal ;
+}
+h4,h5,h6{
+	color:#FA057E;
+	font: normal  arial,sans-serif;
+}
+.pageinfo{
+	width: 100%;
+}
+.leftsideinfo{
+	width: 60%;
+	float: left;
+}
+.leftsideinfo p{
+	font-size: 19px;
+}
+li:hover{
+	background-color: black;
+}
+.rightsideinfo{
+	float: left;
+	width: 40%;
+}
+.rightsideinfo a{
+	text-decoration: none;
+    list-style: asterisks;
+}
