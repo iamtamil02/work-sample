@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Number Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+    	body{
+    		text-align: center;
+    		padding: 8%;
+    		background: black;
+    		color: white;
+    		font-size: 40px;
+    	}
+    	input{
+    		font-size: 20px;
+    		width: 10%;
+    		
+    		outline: none;
+    	}
+    </style>
+</head>
+
+<body>
+    <h2>You Have <span id="amount"></span>  INR</h2>
+    <input class="ds" type="button" name="start" value="start" onclick="butclick()">
+    <p class="over" style="display: none;">GAME IS OVER</p>
+    <p id="num"></p>
+    <p id="state"></p>
+</body>
+<script type="text/javascript">
+var x = 1000;
+
+
+document.getElementById('amount').innerHTML = x;
+$('.ds').click(function() {
+    var i = 0;
+    x = x - 100;
+    document.getElementById('amount').innerHTML = x;
+   
+    var rn1 = Math.floor(Math.random() * 10)
+    var rn2 = Math.floor(Math.random() * 10)
+    var rn3 = Math.floor(Math.random() * 10)
+    document.getElementById('num').innerHTML = (rn1 + " " + rn2 + " " + rn3);
+    /*if same number occurs*/
+    if (rn1 === rn2 && rn2 === rn3 && rn1 === rn3) {
+        document.getElementById('state').innerHTML = "You get 1000 INR";
+        x = x + 1000;
+        document.getElementById('amount').innerHTML = x;
+    } 
+    /*if even number occurs*/
+    else if (rn1 % 2 == 0 && rn2 % 2 == 0 && rn3 % 2 == 0) {
+        document.getElementById('state').innerHTML = "You get 300 INR";
+        x = x + 300;
+        document.getElementById('amount').innerHTML = x;
+    }
+    /*if odd number occurs*/ 
+    else if (rn1 % 2 != 0 && rn2 % 2 != 0 && rn3 % 2 != 0) {
+        document.getElementById('state').innerHTML = "You get 300 INR";
+        x = x + 300;
+        document.getElementById('amount').innerHTML = x;
+    } 
+  
+    
+    else {
+        document.getElementById('state').innerHTML = "You dont Have luck This Time";
+    }
+    /*if sequence numer occurs*/
+    if (rn2 == rn1+1 && rn3 == rn2+1) {
+        document.getElementById('state').innerHTML = "You get 800 INR";
+        x = x + 800;
+        document.getElementById('amount').innerHTML =x;	
+    }
+    if (rn1-rn2 == -1 && rn2-rn3 == -2){
+    	 document.getElementById('state').innerHTML = "You get 800 INR";
+        x = x + 800;
+        document.getElementById('amount').innerHTML =x;	
+    }
+     if (rn1-rn2 == 1 && rn2-rn3 == -1){
+    	 document.getElementById('state').innerHTML = "You get 800 INR";
+        x = x + 800;
+        document.getElementById('amount').innerHTML =x;	
+    }
+    /*if moneys got empty*/
+     if(x<100){
+
+       $('.ds').hide();
+       $('.over').show();
+    } 
+
+})
+</script>
+
+</html>
