@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>port</title>
+	<link rel="icon" href="boom.jpg">
+	<link rel="stylesheet" type="text/css" href="port.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  
+</head>
+<body>
+<div id="second">
+	<div class="container">
+		<div id="menu">
+			<span style="font-size: 40px;cursor: pointer;" onclick="fun1()">&times;</span>
+			<a href="">ABOUT ME</a>
+			<a href="#content">EDUCATION</a>
+			<a href="">SKILL</a>
+			<a href="">CONTACT</a>
+		</div>
+	</div>
+</div>	
+
+<div id="first">
+	<span id="span1" style="font-size: 40px;cursor: pointer; color: black;" onclick="fun();">&#9776;</span>		
+	 <div id="me" class="container">
+	 	<h1><span class="ityped"></span></h1>
+	 </div>
+     <div id="down">
+     	<a href="#content"><i class="fa fa-angle-double-down animated bounce" style="font-size:36px"></i></a>
+     </div>
+</div>
+<div id="about">
+	
+	<div id="content">
+		<img src="me4.jpg" class="circle">
+		<p>Hi, I'm Tamilselvan. I'm a front-end web developer based in Chennai who loves creating great looking web products with rock-solid code.Self-learner, Optimist. Always eager to learn what's new in the market.</p>
+    </div>	
+</div>
+<div class="skill">
+	
+</div>
+<script src="port.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript">
+	window.ityped.init(document.querySelector('.ityped'),{
+		strings : ['Tamilselvan','Web Developer'],
+		loop : true,
+		time :2000
+	})
+</script>
+</body>
+</html>
+
+
